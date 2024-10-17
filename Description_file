@@ -1,0 +1,20 @@
+## For Multithreading ##
+Importing Modules:
+
+threading: This module is used to create and manage threads.
+time: This module is used to add delays in the execution (simulating work).
+Defining a Function:
+
+The function print_numbers takes a thread_name and a delay. It loops through numbers from 1 to 5, sleeping for the specified delay before printing each number.
+Creating Threads:
+
+Two threads (thread1 and thread2) are created, targeting the print_numbers function and passing different arguments (names and delays) to each.
+Starting Threads:
+
+The start() method is called on each thread to begin their execution.
+Joining Threads:
+
+The join() method is called on both threads, which makes the main program wait until both threads have completed their execution.
+Output:
+
+The output will show interleaved numbers printed by both threads, demonstrating how they run concurrently.
